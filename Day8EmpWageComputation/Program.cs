@@ -11,6 +11,7 @@ namespace Day8EmpWageComputation
             empWageComputation.CheckEmpIsPresentOrNot();
             empWageComputation.CalcEmpDailyWage();
             empWageComputation.CheckEmpFullOrPartTime();
+            empWageComputation.UsingSwitchStatement();
         }
     }
 }
