@@ -12,6 +12,7 @@ namespace Day8EmpWageComputation
         int FULL_DAY_HOUR = 8;
         int PART_TIME_HOUR = 4;
         int Total_Day = 20;
+        int Hour = 100;
         bool IsPresent;
         bool IsFullTime;
         Random generateNum = new Random();
@@ -112,6 +113,27 @@ namespace Day8EmpWageComputation
                     break;
             }
 
+
+        }
+        public void MonthWageHour()
+        {
+            int num = generateNum.Next(0, 2);
+            int MonthWagehour;
+
+            switch (num)
+            {
+                case 1:
+                    MonthWagehour = Hour * FULL_DAY_HOUR;
+                    Console.WriteLine("Month Wage of full Time at maximum hours and days is {0}", MonthWagehour);
+                    break;
+                case 2:
+                    MonthWagehour = Hour * PART_TIME_HOUR;
+                    Console.WriteLine("Month Wage of full Time at maximum hours and days is {0}", MonthWagehour);
+                    break;
+                default:
+                    Console.WriteLine("Month Wage is 0");
+                    break;
+            }
 
         }
     }
