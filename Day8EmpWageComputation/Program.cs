@@ -10,6 +10,7 @@ namespace Day8EmpWageComputation
             EmployeeWageComputation empWageComputation = new EmployeeWageComputation();
             empWageComputation.CheckEmpIsPresentOrNot();
             empWageComputation.CalcEmpDailyWage();
+            empWageComputation.CheckEmpFullOrPartTime();
         }
     }
 }
